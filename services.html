@@ -7,171 +7,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - Golden Fable</title>
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <style>
     .services-page {
-        margin-left:auto;
-        margin-right: auto;
-        width: 80%;
-        padding: 5%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      padding: 5%;
+      font-family: 'DM Sans', sans-serif;
     }
-    .service,
-    .call-to-action {
-        margin-bottom: 20px;
-        padding: 20px;
-        /*background: #f4f4f4;*/
-        border-radius: 5px;
+    .service, .call-to-action {
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #f4f4f4;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
     }
-    .service h2,
-    .call-to-action h2 {
-        margin-top: 0;
+    .service:hover, .call-to-action:hover {
+      background-color: #f0f0f0;
     }
-    .service p,
-    .call-to-action p {
-        margin: 0;
+    .service h2, .call-to-action h2 {
+      margin-top: 0;
+      color: #333;
     }
-    .call-to-action a{
-        margin-left: auto;
-        margin-right: auto;
+    .service p, .call-to-action p {
+      margin: 0;
+      color: #555;
     }
-</style>
-
-  <!-- 
-    - google font link
-  -->
+    .call-to-action a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff9900;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .call-to-action a:hover {
+      background-color: #e68a00;
+    }
+    .emoji {
+      font-size: 1.2em;
+      margin-right: 5px;
+    }
+  </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-</head> 
-    <body id="top">
+</head>
 
-        <!-- 
-          - #HEADER
-        -->
-      
-        <header class="header" data-header>
-          <div class="container">
-      
-            <a href="#" class="logo">Golden Fable</a>
-      
-            <nav class="navbar" data-navbar>
-      
-              <div class="wrapper">
-                <a href="#" class="logo">Golden Fable</a>
-      
-                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                  <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-                </button>
-              </div>
-      
-              <ul class="navbar-list">
-      
-                <li class="navbar-item">
-                  <a href="index.html" class="navbar-link" data-nav-link>Home</a>
-                </li>
-      
-                <li class="navbar-item">
-                  <a href="services.html" class="navbar-link" data-nav-link>Services</a>
-                </li>
-      
-                <li class="navbar-item">
-                  <a href="about.html" class="navbar-link" data-nav-link>About Us</a>
-                </li>
-      
-                <li class="navbar-item">
-                  <a href="gallery.html" class="navbar-link" data-nav-link>Gallery</a>
-                </li>
-      
-      <!--        <li class="navbar-item">
-                  <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-                </li>
-      -->  
-              </ul>
-      
-            </nav>
-      
-            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-              <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-            </button>
-      
-            <a href="https://www.instagram.com/the.goldenfable/" class="btn btn-primary has-before has-after">Dm Us: Let’s Talk 👋</a>
-      
-            <div class="overlay" data-nav-toggler data-overlay></div>
-      
-          </div>
-        </header>
-<!-- About Us Page -->
+<body id="top">
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">Golden Fable</a>
+      <nav class="navbar" data-navbar>
+        <div class="wrapper">
+          <a href="#" class="logo">Golden Fable</a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
+          <li class="navbar-item"><a href="services.html" class="navbar-link" data-nav-link>Services</a></li>
+          <li class="navbar-item"><a href="about.html" class="navbar-link" data-nav-link>About Us</a></li>
+          <li class="navbar-item"><a href="gallery.html" class="navbar-link" data-nav-link>Gallery</a></li>
+        </ul>
+      </nav>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+      <a href="https://www.instagram.com/the.goldenfable/" class="btn btn-primary has-before has-after">Dm Us: Let’s Talk 👋</a>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
 
-<!--<section class="asection-class-name">
-  <div>
-#### 2. Services Page
-
-### Overview of Services:
-
-**Virality Algorithm:** 
-Leverage our advanced understanding of social media algorithms to amplify your product's visibility. We stay updated on the latest trends and utilize cutting-edge tools to optimize your social media marketing efforts on platforms like YouTube and Instagram. Our expertise ensures your content achieves maximum reach and engagement, driving significant growth and brand awareness.
-
-**Media Campaign:**
-Our comprehensive media campaign service encompasses content creation, social media marketing, and public relations to meet your specific goals. We produce engaging content tailored to your target audience, build a strong social media presence, and generate positive media coverage. Our campaigns aim to increase brand awareness, generate leads, drive sales, and enhance customer engagement.
-
-**Memetic Advertisement:** 
-Harness the power of memes with our creative and effective meme marketing strategies. Memes are highly shareable and cost-effective, allowing you to reach a large audience quickly. Our services ensure your memes resonate with your target audience, maintain relevant context, and build a sense of community around your brand, fostering loyalty and engagement.
-
-**Post Edits:** 
-Capitalize on viral content with our targeted caption editing service. When your posts go viral, we offer customized caption edits to keep the content relevant and engaging for your audience. This post-viral advertising scheme enhances the impact of your campaigns, driving continued engagement and visibility for your brand.
-
-- **Call-to-Action:**
-  - Dm us, let's talk
-  </div>
-</section>
--->
-<section class="services-page">
+  <section class="services-page">
     <div class="service">
-        <h2>Virality Algorithm</h2>
-        <p>Leverage our advanced understanding of social media algorithms to amplify your product's visibility. We stay updated on the latest trends and utilize cutting-edge tools to optimize your social media marketing efforts on platforms like YouTube and Instagram. Our expertise ensures your content achieves maximum reach and engagement, driving significant growth and brand awareness.</p>
+      <h2><span class="emoji">🚀</span> Virality Algorithm</h2>
+      <p>Leverage our advanced understanding of social media algorithms to amplify your product's visibility. We stay updated on the latest trends and utilize cutting-edge tools to optimize your social media marketing efforts on platforms like YouTube and Instagram. Our expertise ensures your content achieves maximum reach and engagement, driving significant growth and brand awareness.</p>
     </div>
     <div class="service">
-        <h2>Media Campaign</h2>
-        <p>Our comprehensive media campaign service encompasses content creation, social media marketing, and public relations to meet your specific goals. We produce engaging content tailored to your target audience, build a strong social media presence, and generate positive media coverage. Our campaigns aim to increase brand awareness, generate leads, drive sales, and enhance customer engagement.</p>
+      <h2><span class="emoji">📢</span> Media Campaign</h2>
+      <p>Our comprehensive media campaign service encompasses content creation, social media marketing, and public relations to meet your specific goals. We produce engaging content tailored to your target audience, build a strong social media presence, and generate positive media coverage. Our campaigns aim to increase brand awareness, generate leads, drive sales, and enhance customer engagement.</p>
     </div>
     <div class="service">
-        <h2>Memetic Advertisement</h2>
-        <p>Harness the power of memes with our creative and effective meme marketing strategies. Memes are highly shareable and cost-effective, allowing you to reach a large audience quickly. Our services ensure your memes resonate with your target audience, maintain relevant context, and build a sense of community around your brand, fostering loyalty and engagement.</p>
+      <h2><span class="emoji">😆</span> Memetic Advertisement</h2>
+      <p>Harness the power of memes with our creative and effective meme marketing strategies. Memes are highly shareable and cost-effective, allowing you to reach a large audience quickly. Our services ensure your memes resonate with your target audience, maintain relevant context, and build a sense of community around your brand, fostering loyalty and engagement.</p>
     </div>
     <div class="service">
-        <h2>Post Edits</h2>
-        <p>Capitalize on viral content with our targeted caption editing service. When your posts go viral, we offer customized caption edits to keep the content relevant and engaging for your audience. This post-viral advertising scheme enhances the impact of your campaigns, driving continued engagement and visibility for your brand.</p>
+      <h2><span class="emoji">✏️</span> Post Edits</h2>
+      <p>Capitalize on viral content with our targeted caption editing service. When your posts go viral, we offer customized caption edits to keep the content relevant and engaging for your audience. This post-viral advertising scheme enhances the impact of your campaigns, driving continued engagement and visibility for your brand.</p>
     </div>
     <div class="call-to-action">
-          <a href="https://www.instagram.com/the.goldenfable/" class="btn btn-primary has-before has-after">Dm Us: Let’s Talk 👋</a>
-          <div class="overlay" data-nav-toggler data-overlay></div>
+      <h2><span class="emoji">📞</span> Ready to Transform Your Brand?</h2>
+      <a href="https://www.instagram.com/the.goldenfable/">Dm Us: Let’s Talk 👋</a>
     </div>
-</section>
+  </section>
 
-
-  <!-- 
-    - custom js link
-  -->
   <script src="./assets/js/script.js" defer></script>
-
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-  <script src="./assets/js/script.js" defer></script>
-
-
 </body>
 
 </html>
